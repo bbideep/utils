@@ -3,7 +3,7 @@
 1) Stop docker:  
 ```systemctl stop docker```
 
-2) Copy 'docker' directory to new location /opt/newpath [This step is required if you want to copy existing images and files]:   
+2) Copy 'docker' directory to new location /opt/newpath. Create /opt/newpath if required. [This step is required if you want to copy existing images and files]:   
 ```cp -R /var/lib/docker /opt/newpath/```
 
 3) Backup current /var/lib/docker to /var/lib/docker.orig:    
