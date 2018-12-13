@@ -12,7 +12,7 @@
 4) Either change /lib/systemd/system/docker.service file as:   
 ```ExecStart=<current value>``` to ```ExecStart=<current value> -g /opt/newpath/docker```   
 or modify the OPTIONS in /etc/sysconfig/docker file as:   
-```OPTIONS=<current options>``` to ```OPTIONS="<current options> -g /opt/newpath/docker```    
+```OPTIONS="<current options>"``` to ```OPTIONS="<current options> -g /opt/newpath/docker"```    
 I prefer modifying /etc/sysconfig/docker as this is a better place to customize!
 
 5) Start docker:  
